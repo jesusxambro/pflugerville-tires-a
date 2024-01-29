@@ -1,0 +1,137 @@
+
+:root {
+    --primary-color: #db1b14; /* Bootstrap red variant */
+}
+
+body {  
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    background-color: var(--primary-color);
+}
+
+nav.navbar {
+    border-bottom: 3px solid var(--primary-color);
+}
+
+.navbar-brand, .nav-link {
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    color: #fff;
+    background-color: var(--primary-color);
+}
+
+#services, #contact {
+    padding: 2rem 0;
+}
+
+#testimonials {
+    background-color: #f9f9f9;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.hero-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa; /* A light background to contrast the tire image */
+}
+
+.hero-section img {
+    max-width: 100%; /* ensures the image is responsive */
+    height: auto; /* maintains aspect ratio */
+}
+
+.hero-section h1 {
+    font-size: 2.5rem; /* Large text for the main title */
+}
+
+.btn-red {
+    background-color: #d9534f; /* Bootstrap's `$brand-danger` color */
+    border-color: #d43f3a; /* A slightly darker border for the button */
+}
+.hero-section p {
+    font-size: 1.25rem; /* Slightly larger text for the description */
+}
+
+.hero-section .btn {
+    padding: 0.75rem 2rem; /* Larger button padding */
+    font-size: 1rem; /* Button text size */
+    border-radius: 0.5rem; /* Rounded corners for the button */
+    background-color: #d9534f; /* Red color theme for the primary button */
+    border-color: #d9534f; /* Red color theme for the border of the button */
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+    }
+    
+    .hero-section img {
+        margin-bottom: 2rem; /* Adds space between the image and text on smaller screens */
+    }
+}
+
+#yelp-reviews {
+    background-color: #fff;
+}
+
+#yelp-reviews .card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#yelp-reviews h2 {
+    color: var(--primary-color); /* Use the red theme color */
+}
+
+#yelp-reviews .btn {
+    background-color: var(--primary-color); /* Use the red theme color */
+    border-color: var(--primary-color); /* Use the red theme color */
+}
+
+/* Card title */
+#yelp-reviews .card-title {
+    color: #333;
+}
+
+/* Card text */
+#yelp-reviews .card-text {
+    color: #555;
+}
+
+/* Smaller text, like the review attribution */
+#yelp-reviews .text-muted {
+    color: #666;
+}
+
+.service-heading {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #d9534f; /* Using the red theme color */
+}
+
+.contact-info h4 {
+    color: #d9534f; /* Using the red theme color */
+    margin-top: 1rem;
+}
+
+.map-container {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.map-container iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
